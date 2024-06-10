@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class logicOperator {
 
     public static void main(String[] args) {
@@ -8,6 +10,18 @@ public class logicOperator {
 
         // boolean x = 3 < 10 && 3 % 2 == 0;
         // boolean x = 3 < 10 || 3 % 2 == 0;
+
+        // Scanner scanner = new Scanner(System.in);
+
+        // System.out.println("you are playing a game! Press q or Q to quit");
+        // String response = scanner.next();
+
+        // if (response.equals("q") || response.equals("Q")) {
+        // System.out.println("you quit the game");
+        // } else {
+
+        // System.out.println("you are still playing the game");
+        // }
 
         // !/ if statement
 
@@ -63,6 +77,21 @@ public class logicOperator {
                 System.out.println("it's not a day");
                 break;
         }
+
+        // !/
+
+        // !/ while loop
+
+        Scanner scanner = new Scanner(System.in);
+
+        String name = "";
+
+        while (name.isBlank()) {
+            System.out.print("Enter your name: ");
+            name = scanner.nextLine();
+        }
+
+        System.out.println("Hello " + name);
 
         // !/
     }
