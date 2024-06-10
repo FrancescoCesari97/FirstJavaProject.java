@@ -44,56 +44,93 @@ public class logicOperator {
         // !/ switch statement allows a variable to be tested for equality against a
         // list of values
 
-        String day = "prova";
+        // String day = "prova";
 
-        switch (day) {
+        // switch (day) {
 
-            case "Monday":
-                System.out.println("it's Monday");
-                break;
-            case "Tuesday":
-                System.out.println("it's Tuesday");
-                break;
-            case "Wednesady":
-                System.out.println("it's Wednesady");
-                break;
-            case "Thursday":
-                System.out.println("it's Thursday");
-                break;
+        // case "Monday":
+        // System.out.println("it's Monday");
+        // break;
+        // case "Tuesday":
+        // System.out.println("it's Tuesday");
+        // break;
+        // case "Wednesady":
+        // System.out.println("it's Wednesady");
+        // break;
+        // case "Thursday":
+        // System.out.println("it's Thursday");
+        // break;
 
-            case "Friday":
-                System.out.println("it's Friday");
-                break;
+        // case "Friday":
+        // System.out.println("it's Friday");
+        // break;
 
-            case "Saturday":
-                System.out.println("it's Saturday");
-                break;
+        // case "Saturday":
+        // System.out.println("it's Saturday");
+        // break;
 
-            case "Sunday":
-                System.out.println("it's Sunday");
-                break;
+        // case "Sunday":
+        // System.out.println("it's Sunday");
+        // break;
 
-            default:
-                System.out.println("it's not a day");
-                break;
-        }
+        // default:
+        // System.out.println("it's not a day");
+        // break;
+        // }
 
         // !/
 
         // !/ while loop
 
-        Scanner scanner = new Scanner(System.in);
+        // Scanner scanner = new Scanner(System.in);
 
-        String name = "";
+        // String name = "";
 
-        while (name.isBlank()) {
-            System.out.print("Enter your name: ");
-            name = scanner.nextLine();
-        }
+        // while (name.isBlank()) {
+        // System.out.print("Enter your name: ");
+        // name = scanner.nextLine();
+        // }
 
-        System.out.println("Hello " + name);
+        // System.out.println("Hello " + name);
 
         // !/
+
+        // !/ for loop
+
+        // for (int i = 0; i <= 10; i++) {
+        // System.out.println(i);
+        // }
+
+        // System.out.println("Happy new year");
+
+        // !/
+
+        // !/ nested for loop
+
+        Scanner scanner = new Scanner(System.in);
+
+        int rows;
+        int columns;
+        String symbol = "";
+
+        System.out.println("Enter a number of rows: ");
+        rows = scanner.nextInt();
+
+        System.out.println("Enter a number of columns: ");
+        columns = scanner.nextInt();
+
+        System.out.println("Enter a symbol: ");
+        symbol = scanner.next();
+
+        for (int i = 1; i <= rows; i++) {
+            System.out.println();
+            for (int y = 1; y <= columns; y++) {
+                System.out.print(symbol);
+            }
+        }
+
+        // !/
+
     }
 
 }
