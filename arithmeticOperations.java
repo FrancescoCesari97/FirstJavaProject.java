@@ -1,6 +1,9 @@
 
 import java.util.Scanner;
 
+// !/ How to genarete ramdom values
+import java.util.Random;
+
 public class arithmeticOperations {
 
     public static void main(String[] args) {
@@ -24,19 +27,33 @@ public class arithmeticOperations {
 
         // !/ program to calculate the hypotenuse of a right triangle
 
-        Scanner scanner = new Scanner(System.in);
+        // Scanner scanner = new Scanner(System.in);
 
-        double x;
-        double y;
-        double z;
+        // double x;
+        // double y;
+        // double z;
 
-        System.out.println("Enter side x: ");
-        x = scanner.nextDouble();
+        // System.out.println("Enter side x: ");
+        // x = scanner.nextDouble();
 
-        System.out.println("Enter side y: ");
-        y = scanner.nextDouble();
+        // System.out.println("Enter side y: ");
+        // y = scanner.nextDouble();
 
-        z = Math.sqrt((x * x) + (y * y));
+        // z = Math.sqrt((x * x) + (y * y));
+
+        // System.out.println(z);
+
+        // !/
+
+        // !/ How to genarete ramdom values
+
+        Random random = new Random();
+
+        int x = random.nextInt(6) + 1;
+
+        Double y = random.nextDouble(15);
+
+        boolean z = random.nextBoolean();
 
         System.out.println(z);
 
